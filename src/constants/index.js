@@ -233,7 +233,7 @@ import {
         },
       ],
       image: Personal,
-      source_code_link: "https://github.com/amanjaiman1/Porfolio-v1",
+      source_code_link: "https://github.com/rahulkeezhath/Portifolio-v2",
       minImg: github,
     },
   ];
