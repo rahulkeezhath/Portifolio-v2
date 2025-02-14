@@ -23,9 +23,8 @@ const Social = () => {
     variants={textVariant()}
     >
     <a  href='https://github.com/rahulkeezhath' target=' ' ><img className="h-[40px]" src={github} alt="" /></a>
-    <a  href='https://www.linkedin.com/in/rahul-keezhath-bb5094234/' target=' ' ><img className="h-[40px]" src={linkedin} alt="" /></a>
-    <a  href='https://twitter.com/RahulKeezhath' target=' ' ><img className="h-[45px]" src={twitter} alt="" /></a>
-    <a  href='https://www.instagram.com/rahul_kuttu_/' target=' ' ><img className="h-[40px]" src={instagram} alt="" /></a>
+    <a  href='https://www.linkedin.com/in/rahulkeezhath' target=' ' ><img className="h-[40px]" src={linkedin} alt="" /></a>
+    <a  href='https://www.instagram.com/rahul_kuttu_' target=' ' ><img className="h-[40px]" src={instagram} alt="" /></a>
     <a  href='https://www.facebook.com/rahul.keezath'  target=' '><img className="h-[40px]" src={facebook} alt="" /></a>
     </motion.div>
       <br />

@@ -24,6 +24,7 @@ import warnimg from "./warning.png"
 import Fastrack from './Fastrack.png'
 import Foody from './Foody.png'
 import Netflix from './Netflix.png'
+import Wazuh from './wazuh.png'
 
 
 import css from "./tech/css.png";
@@ -39,6 +40,10 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import express from "./tech/express.png"
 import vue from "./tech/vue.png"
+import splunk from "./tech/splunk.png";
+import burpsuite from './tech/burpsuite.png'
+import wireshark from './tech/wireshark.png'
+import metasploit from './tech/metasploit.png'
 
 import honeyuncle from "./company/honeyuncle.png";
 import zerociti from "./company/zerociti.png";
@@ -58,6 +63,7 @@ export {
   github,
   linkedin,
   menu,
+  Wazuh,
   close,
   ravi,
   chatgpt,
@@ -65,6 +71,10 @@ export {
   css,
   docker,
   figma,
+  metasploit,
+  splunk,
+  burpsuite,
+  wireshark,
   git,
   html,
   javascript,

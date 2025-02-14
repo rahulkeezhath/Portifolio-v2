@@ -133,60 +133,49 @@ const ProjectCard = ({ index, name, description,
 const Works = () => {
   return (
     <>
-    <motion.div  variants={ textVariant() } className="border-t-2 pt-2 border-cyan-300">
-    <p className={styles.sectionSubText}>
-      My work
-    </p>
-    <h2 className={styles.sectionHeadText}>
-      Projects
-    </h2>
-    </motion.div>
-
-    <div className="w-full sm:flex gap-52">
-      <motion.p 
-      variants={fadeIn("", "", 0.1, 1)}
-      className = "mt-3 text-secondary sm:text-[17px] text-[13px] max-w-3xl leading-[30px] "
+      <motion.div
+        variants={textVariant()}
+        className="border-t-2 pt-2 border-cyan-300"
       >
-        Following projects showcases my skills
-        and experience through
-        real-world examples of my work. Each
-        project is breifly described with 
-        links to code repositories and live demos in it.
-         It reflects my abillity to solve complex 
-         problems, work with different technologies,
-         and manage projects effectively.
-      </motion.p>
-      <img className="h-[250px] mt-[-100px] max-sm:mt-3 max-sm:ml-auto " src={studying} alt="" />
-    </div>
+        <p className={styles.sectionSubText}>My work</p>
+        <h2 className={styles.sectionHeadText}>Projects</h2>
+      </motion.div>
 
-    <div className="mt-20 flex max-sm:hidden flex-wrap gap-7">
-    
-      {projects.map((project, index) => (
-        <ProjectCard 
-          key={`project-${index}`}
-          index = {index}
-          {...project}
+      <div className="w-full sm:flex gap-52">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary sm:text-[17px] text-[13px] max-w-3xl leading-[30px] "
+        >
+          A collection of cybersecurity initiatives and research showcasing my
+          expertise in SOC analysis, penetration testing, and threat detection.
+          These projects highlight my hands-on experience in security
+          monitoring, vulnerability assessments, and incident response,
+          demonstrating my ability to identify and mitigate cyber threats
+          effectively. 
+        </motion.p>
+        <img
+          className="h-[250px] mt-[-100px] max-sm:mt-3 max-sm:ml-auto "
+          src={studying}
+          alt=""
         />
-      ))}
-      <img className="h-[350px] mt-[90px] ml-[35%]  " src={juicyboy} alt="" />
+      </div>
 
-    </div>
+      <div className="mt-20 flex max-sm:hidden flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+        <img className="h-[350px] mt-[90px] ml-[35%]  " src={juicyboy} alt="" />
+      </div>
 
-    {/* for Mobile Only  */}
+      {/* for Mobile Only  */}
 
-    <div className="mt-20 sm:hidden flex flex-wrap gap-7">
-    
-      {projects.map((project, index) => (
-        <ProjectCard2 
-          key={`project-${index}`}
-          index = {index}
-          {...project}
-        />
-      ))}
-    </div>
-
+      <div className="mt-20 sm:hidden flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard2 key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
 export default SectionWrapper(Works, "")

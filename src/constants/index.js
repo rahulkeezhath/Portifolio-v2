@@ -3,17 +3,18 @@ import {
     backend,
     creator,
     web,
-    reactjs,
-    nodejs,
     Personal,
     Fastrack,
-    tailwind,
-    figma,
-    express,
     github,
     Foody,
     live,
-    Netflix
+    Netflix,
+    docker,
+    splunk,
+    burpsuite,
+    wireshark,
+    metasploit,
+    Wazuh
   } from "../assets";
   
   export const navLinks = [
@@ -29,43 +30,43 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "SOC Analyst",
       icon: web,
     },
     {
-      title: "React JS Developer",
+      title: "Penetration Tester",
       icon: mobile,
     },
     {
-      title: "Node JS Developer",
+      title: "SIEM & Threat Intelligence",
       icon: backend,
     },
     {
-      title: "Full Stack Developer",
+      title: "Network & Cloud Security",
       icon: creator,
     },
   ];
 
   const technologies = [
     {
-      title: "React",
-      icon: reactjs,
+      title: "Splunk",
+      icon: splunk,
     },
     {
-      title: "Node",
-      icon: nodejs,
+      title: "Metasploit",
+      icon: metasploit,
     },
     {
-      title: "Express",
-      icon: express,
+      title: "Docker",
+      icon: docker,
     },
     {
-      title: "Tailwind Css",
-      icon: tailwind,
+      title: "Burpsuite",
+      icon: burpsuite,
     },
     {
-      title: "Figma",
-      icon: figma,
+      title: "WireShark",
+      icon: wireshark,
     },
   ];
   
@@ -150,27 +151,49 @@ import {
   
   const projects = [
     {
-      name: "Fastrack",
+      name: "Wazuh",
       description:
-        "Welcome to our convenient and reliable car rental website! Whether you're planning a road trip, need a vehicle for your business travels, or simply want to explore a new city, our platform offers a wide range of rental cars to suit your needs. With our user-friendly interface, you can easily search, compare, and book the perfect vehicle in just a few clicks.Start exploring now and let the magic of movies unfold before your eyes!",
+        "Wazuh is an open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform that provides real-time threat detection, log analysis, and security monitoring. It integrates host-based intrusion detection (HIDS), file integrity monitoring (FIM), vulnerability detection, and incident response capabilities to help organizations detect and respond to cybersecurity threats effectively.",
       tags: [
         {
-          name: "React",
+          name: "SIEM",
           color: "blue-text-gradient",
         },
         {
-          name: "vite",
+          name: "Dashboard",
           color: "green-text-gradient",
         },
         {
-          name: "express",
+          name: "Alert",
           color: "pink-text-gradient",
         },
       ],
-      image: Fastrack,
+      image: Wazuh,
       source_code_link: "https://github.com/rahulkeezhath/Car-Rental-Website",
-      minImg: github,
+      minImg: live,
     },
+    // {
+    //   name: "Fastrack",
+    //   description:
+    //     "Welcome to our convenient and reliable car rental website! Whether you're planning a road trip, need a vehicle for your business travels, or simply want to explore a new city, our platform offers a wide range of rental cars to suit your needs. With our user-friendly interface, you can easily search, compare, and book the perfect vehicle in just a few clicks.Start exploring now and let the magic of movies unfold before your eyes!",
+    //   tags: [
+    //     {
+    //       name: "React",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "vite",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "express",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: Fastrack,
+    //   source_code_link: "https://github.com/rahulkeezhath/Car-Rental-Website",
+    //   minImg: github,
+    // },
     {
       name: "Netflix",
       description:
@@ -191,33 +214,34 @@ import {
       ],
       image: Netflix,
       source_code_link: "https://github.com/rahulkeezhath/Netflix-Clone",
-      minImg: live,
-    },
-    {
-      name: "Foody",
-      description:
-        "Welcome to our vibrant ecommerce website, your one-stop destination for fresh and delicious fruits, vegetables, and refreshing juices! We bring the farm-fresh goodness straight to your doorstep, making healthy living convenient and enjoyable.But we don't stop at just fruits and vegetables.Explore our bountiful selection of top-quality fruits and vegetables, carefully sourced from trusted farmers who prioritize taste and nutrition. ",
-      tags: [
-        {
-          name: "EJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Bootstrap",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Express",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: Foody,
-      source_code_link: "https://github.com/rahulkeezhath/Foody",
       minImg: github,
     },
+    // {
+    //   name: "Foody",
+    //   description:
+    //     "Welcome to our vibrant ecommerce website, your one-stop destination for fresh and delicious fruits, vegetables, and refreshing juices! We bring the farm-fresh goodness straight to your doorstep, making healthy living convenient and enjoyable.But we don't stop at just fruits and vegetables.Explore our bountiful selection of top-quality fruits and vegetables, carefully sourced from trusted farmers who prioritize taste and nutrition. ",
+    //   tags: [
+    //     {
+    //       name: "EJS",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "Bootstrap",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "Express",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: Foody,
+    //   source_code_link: "https://github.com/rahulkeezhath/Foody",
+    //   minImg: github,
+    // },
     {
       name: "Personal Portfolio",
-      description: "Hey look! , This is it, you are surfing ON 😗",
+      description:
+        "Hey look! This is it, you are exploring my Cybersecurity Portfolio. Welcome to my digital space, where cybersecurity meets passion and expertise. This portfolio is a reflection of my journey as a SOC Analyst, Cybersecurity Analyst, and Web Penetration Tester, showcasing my skills, projects, and experiences in the ever-evolving world of cybersecurity.",
       tags: [
         {
           name: "ReactJS",

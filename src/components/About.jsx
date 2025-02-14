@@ -83,56 +83,49 @@ const About = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()} >
-        <p className={`  ${scroll ? "text-[#000000] letter" : "text-[#fdfdfd]" } ${styles.sectionSubText} mt-10  `}
-        >Introduction</p>
+      <motion.div variants={textVariant()}>
+        <p
+          className={`  ${
+            scroll ? "text-[#000000] letter" : "text-[#fdfdfd]"
+          } ${styles.sectionSubText} mt-10  `}
+        >
+          Introduction
+        </p>
       </motion.div>
       <motion.div variants={textVariant1()}>
-      <h2 className={styles.sectionHeadText}
-        >Overview</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p 
-        variants= {fadeIn("", "", 0.1, 1)}
-        className=" text-[13px]"
-      >
-       I'm an expert software developer with expertise in 
-        Javascript, Express.js, Node.js and React.js, and I am quick
-         to pick things up and work closely with customers to create
-         solutions that are practical, scalable, and user-friendly.
-         Let's work together to bring your ideas to life.
-
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className=" text-[13px]">
+        A passionate SOC Analyst & Web Penetration Tester with hands-on
+        experience in security operations, vulnerability assessments, and
+        incident response.With cybersecurity threats evolving daily, I aim to
+        secure digital infrastructures and detect threats proactively. This
+        portfolio reflects my skills, projects, and dedication to ethical
+        hacking, security analysis, and SOC operations.
       </motion.p>
       <br />
       <p className="border-b-2 border-[#70ebc0] "></p>
-  
 
-      <motion.div
-        whileTap={{ scale: 0, rotateY: -90 ,borderRadius:"50%" }}
-      >
-
-      <div className="mt-20 flex flex-wrap max-sm:hidden gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+      <motion.div whileTap={{ scale: 0, rotateY: -90, borderRadius: "50%" }}>
+        <div className="mt-20 flex flex-wrap max-sm:hidden gap-10">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
       </motion.div>
 
       {/* for mobile only  */}
 
       <motion.div>
-      <div className="mt-20 flex-wrap flex sm:hidden gap-10">
-        {services.map((service, index) => (
-          <ServiceCard2 key={service.title} index={index} {...service} />
-        ))}
-      </div>
+        <div className="mt-20 flex-wrap flex sm:hidden gap-10">
+          {services.map((service, index) => (
+            <ServiceCard2 key={service.title} index={index} {...service} />
+          ))}
+        </div>
       </motion.div>
-
-
-
-
     </>
-  )
+  );
 }
 
 export default SectionWrapper(About, "about")
