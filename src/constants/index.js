@@ -4,9 +4,7 @@ import {
     creator,
     web,
     Personal,
-    Fastrack,
     github,
-    Foody,
     live,
     Netflix,
     docker,
@@ -14,7 +12,8 @@ import {
     burpsuite,
     wireshark,
     metasploit,
-    Wazuh
+    Wazuh,
+    LetsDefend
   } from "../assets";
   
   export const navLinks = [
@@ -153,7 +152,7 @@ import {
     {
       name: "Wazuh",
       description:
-        "Wazuh is an open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform that provides real-time threat detection, log analysis, and security monitoring. It integrates host-based intrusion detection (HIDS), file integrity monitoring (FIM), vulnerability detection, and incident response capabilities to help organizations detect and respond to cybersecurity threats effectively.",
+        "Wazuh is an open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform that provides real-time threat detection, log analysis, and security monitoring.",
       tags: [
         {
           name: "SIEM",
@@ -169,7 +168,6 @@ import {
         },
       ],
       image: Wazuh,
-      source_code_link: "https://github.com/rahulkeezhath/Car-Rental-Website",
       minImg: live,
     },
     // {
@@ -195,26 +193,25 @@ import {
     //   minImg: github,
     // },
     {
-      name: "Netflix",
+      name: "LetsDefend",
       description:
-        "Welcome to our exciting Netflix clone website, where entertainment knows no bounds! Get ready to immerse yourself in a world of captivating movies, thrilling TV shows, and binge-worthy series. With our extensive collection of content spanning multiple genres and languages, there's something for everyone.Explore a diverse range of genres and discover hidden gems that will keep you hooked for hours on end. ",
+        "Gained hands-on experience in live SOC monitoring and incident response through real-time labs on the LetsDefend platform. ",
       tags: [
         {
-          name: "React",
+          name: "Log Analysis",
           color: "blue-text-gradient",
         },
         {
-          name: "JS",
+          name: "Threat Hunting",
           color: "green-text-gradient",
         },
         {
-          name: "Node JS",
+          name: "Forensic",
           color: "pink-text-gradient",
         },
       ],
-      image: Netflix,
-      source_code_link: "https://github.com/rahulkeezhath/Netflix-Clone",
-      minImg: github,
+      image: LetsDefend,
+      minImg: live,
     },
     // {
     //   name: "Foody",
@@ -241,7 +238,7 @@ import {
     {
       name: "Personal Portfolio",
       description:
-        "Hey look! This is it, you are exploring my Cybersecurity Portfolio. Welcome to my digital space, where cybersecurity meets passion and expertise. This portfolio is a reflection of my journey as a SOC Analyst, Cybersecurity Analyst, and Web Penetration Tester, showcasing my skills, projects, and experiences in the ever-evolving world of cybersecurity.",
+        "Hey look! This is it, you are exploring my Cybersecurity Portfolio.",
       tags: [
         {
           name: "ReactJS",

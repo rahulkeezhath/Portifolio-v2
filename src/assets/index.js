@@ -25,6 +25,7 @@ import Fastrack from './Fastrack.png'
 import Foody from './Foody.png'
 import Netflix from './Netflix.png'
 import Wazuh from './wazuh.png'
+import LetsDefend from './LetsDefend.png'
 
 
 import css from "./tech/css.png";
@@ -105,5 +106,6 @@ export {
   warnimg,
   Fastrack,
   Foody,
-  Netflix
+  Netflix,
+  LetsDefend
 };
