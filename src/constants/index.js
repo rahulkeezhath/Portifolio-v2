@@ -13,7 +13,11 @@ import {
     wireshark,
     metasploit,
     Wazuh,
-    LetsDefend
+    LetsDefend,
+    zeek,
+    Splunk,
+    Snort,
+    ELK
   } from "../assets";
   
   export const navLinks = [
@@ -150,6 +154,28 @@ import {
   
   const projects = [
     {
+      name: "Splunk",
+      description:
+        "Utilized the Splunk platform to collect, analyze, and visualize security logs for threat detection and incident response. Created dashboards, set up alerts, and developed queries to monitor and investigate suspicious activities in real time.",
+      tags: [
+        {
+          name: "SIEM",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dashboard",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Logs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Splunk,
+      source_code_link: "https://github.com/rahulkeezhath/Car-Rental-Website",
+      minImg: github,
+    },
+    {
       name: "Wazuh",
       description:
         "Wazuh is an open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) platform that provides real-time threat detection, log analysis, and security monitoring.",
@@ -170,47 +196,67 @@ import {
       image: Wazuh,
       minImg: live,
     },
-    // {
-    //   name: "Fastrack",
-    //   description:
-    //     "Welcome to our convenient and reliable car rental website! Whether you're planning a road trip, need a vehicle for your business travels, or simply want to explore a new city, our platform offers a wide range of rental cars to suit your needs. With our user-friendly interface, you can easily search, compare, and book the perfect vehicle in just a few clicks.Start exploring now and let the magic of movies unfold before your eyes!",
-    //   tags: [
-    //     {
-    //       name: "React",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "vite",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "express",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: Fastrack,
-    //   source_code_link: "https://github.com/rahulkeezhath/Car-Rental-Website",
-    //   minImg: github,
-    // },
     {
-      name: "LetsDefend",
+      name: "Zeek",
       description:
-        "Gained hands-on experience in live SOC monitoring and incident response through real-time labs on the LetsDefend platform. ",
+        "Deployed Zeek to monitor and analyze network traffic for security threats. Forwarded Zeek logs to Splunk using Splunk Forwarder for centralized log analysis, threatdetection, and real-time alerting through customdashboards and queries.",
       tags: [
         {
           name: "Log Analysis",
           color: "blue-text-gradient",
         },
         {
-          name: "Threat Hunting",
+          name: "Threat Detection",
           color: "green-text-gradient",
         },
         {
-          name: "Forensic",
+          name: "Alert",
           color: "pink-text-gradient",
         },
       ],
-      image: LetsDefend,
+      image: zeek,
+      minImg: live,
+    },
+    {
+      name: "Snort",
+      description:
+        "Installed and configured Snort for network threat detection, developed custom rules, set up logging and alerts, and optimized detection to reduce false positives.",
+      tags: [
+        {
+          name: "Threat Detection",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Custom Rules",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Logging and Alerts",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Snort,
+      minImg: live,
+    },
+    {
+      name: "ELK",
+      description:
+        "Deployed and configured the ELK Stack to collect, parse, and visualize security logs, enabling real-time monitoring, threat detection, and analysis through custom dashboards.",
+      tags: [
+        {
+          name: "Log Collection",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Parsing",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Alerting",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ELK,
       minImg: live,
     },
     // {
@@ -235,28 +281,28 @@ import {
     //   source_code_link: "https://github.com/rahulkeezhath/Foody",
     //   minImg: github,
     // },
-    {
-      name: "Personal Portfolio",
-      description:
-        "Hey look! This is it, you are exploring my Cybersecurity Portfolio.",
-      tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "vite",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind ",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: Personal,
-      source_code_link: "https://github.com/rahulkeezhath/Portifolio-v2",
-      minImg: github,
-    },
+    // {
+    //   name: "Personal Portfolio",
+    //   description:
+    //     "Hey look! This is it, you are exploring my Cybersecurity Portfolio.",
+    //   tags: [
+    //     {
+    //       name: "ReactJS",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "vite",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "tailwind ",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: Personal,
+    //   source_code_link: "https://github.com/rahulkeezhath/Portifolio-v2",
+    //   minImg: github,
+    // },
   ];
   
   export { services, technologies, projects };

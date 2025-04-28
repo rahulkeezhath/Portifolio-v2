@@ -26,7 +26,9 @@ import Foody from './Foody.png'
 import Netflix from './Netflix.png'
 import Wazuh from './wazuh.png'
 import LetsDefend from './LetsDefend.png'
-
+import Splunk from './Splunk.png'
+import Snort from './Snort.png'
+import ELK from './ELK.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -45,6 +47,7 @@ import splunk from "./tech/splunk.png";
 import burpsuite from './tech/burpsuite.png'
 import wireshark from './tech/wireshark.png'
 import metasploit from './tech/metasploit.png'
+import zeek from './tech/Zeek.jpg'
 
 import honeyuncle from "./company/honeyuncle.png";
 import zerociti from "./company/zerociti.png";
@@ -107,5 +110,9 @@ export {
   Fastrack,
   Foody,
   Netflix,
-  LetsDefend
+  LetsDefend,
+  zeek,
+  Splunk,
+  Snort,
+  ELK
 };
