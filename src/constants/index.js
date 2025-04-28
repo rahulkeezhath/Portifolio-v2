@@ -153,6 +153,7 @@ import {
   // ];
   
   const projects = [
+    
     {
       name: "Splunk",
       description:
@@ -303,6 +304,7 @@ import {
     //   source_code_link: "https://github.com/rahulkeezhath/Portifolio-v2",
     //   minImg: github,
     // },
+
   ];
   
   export { services, technologies, projects };
